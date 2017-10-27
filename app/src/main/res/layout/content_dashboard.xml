@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="codeminds.recipepuppy.DashboardActivity"
+    tools:showIn="@layout/app_bar_dashboard">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logonew" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Search by Ingredients (comma separated):" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#ffffff"
+            android:id="@+id/recp"
+            android:backgroundTint="#E0E0E0"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:onClick="submitData"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            android:layout_gravity="end"/>
+
+
+</LinearLayout>
